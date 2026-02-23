@@ -69,7 +69,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 /*builder.Services.AddScoped<IImageUploadService, ImageUploadService>();*/
 builder.Services.AddScoped<IImageUploadService>(provider =>
-    new ImageUploadService("https://blueberrydatastorage.blob.core.windows.net/cbt-car-rental?sp=racwdli&st=2025-05-09T05:11:01Z&se=2027-01-16T13:11:01Z&spr=https&sv=2024-11-04&sr=c&sig=xNt26m4t9MJQGlqSgEgjFg8zEeGpMlJe3trJtlhP4gQ%3D"));
+    new ImageUploadService(""));
 builder.Services.AddHostedService<DocumentExpiryNotificationService>();
 builder.Services.AddScoped<VehicleService>();
 
